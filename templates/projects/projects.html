@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Projects
+{% endblock title %}
+
+{% load static %}
+
+{% block content %}
+    
+<section class="projects-section center-column">
+    <h1 class="text-center mt-4">My Projects</h1>
+    <h2>hello world</h2>
+    <div class="projects-list">
+        {% for project in projects_list %}
+        <div class="project-card">
+            <a href="{{ project.repository }}" target="_blank">
+                <img src="project.image.url" alt="">
+                <p>{{ project.name }}</p>
+                <p>{{ project.description }}</p>
+                <p>{{ project.year }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+
+{% endblock content %}

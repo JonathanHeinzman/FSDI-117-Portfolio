@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %} About Me {% endblock %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/about_me.css' %}">
+{% endblock %}
+
+{% block content %}    
+<section class="container d-flex align-items-center justify-content-center vh-100 scroll-y">
+
+    <div class="d-flex align-items-center justify-content-center">
+        <div class="about-image-container row align-items-start h-100">
+            <img src="{% static 'img/portfolio.jpg' %}" class="portfolio-img rounded-circle" alt="portfolio-picture">
+            <h3 class="text-center pt-4 fw-bold">Jonathan Heinzman</h3>
+        </div>
+
+        <div class="mx-5 h-100">
+            <h3 class="text-center">My Role as a Full-Stack Developer</h3>
+
+            <p class="text-center">
+                I am a disciplined and driven software developer with a background as a Marine. My military service strengthened my resilience, leadership, and ability to perform under pressure — qualities I now bring into every project I build. I specialize in backend development using Django and Python, and I am also skilled in HTML, CSS, and JavaScript for building responsive, user-friendly interfaces. By combining strong backend systems with clean front-end design, I create full-stack web applications that are secure, efficient, and practical. I approach development with a mission-focused mindset and a commitment to continuous growth, always striving to build reliable and impactful digital solutions.
+            </p>
+        </div>
+    </div>
+
+</section>
+{% endblock content %}
