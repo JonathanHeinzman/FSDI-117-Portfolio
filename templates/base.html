@@ -28,10 +28,10 @@
                             <a class="nav-link {% if 'experience' in request.path %}active{% endif %}"  {% if 'experience' in request.path %}aria-current="page"{% endif %} href="{% url 'experience' %}">Experience</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link {% if 'projects' in request.path %}active{% endif %}"  {% if 'projects' in request.path %}aria-current="page"{% endif %} href="{% url 'projects' %}">Projects</a>
+                            <a class="nav-link {% if 'projects' in request.path %}active{% endif %}"  {% if 'projects' in request.path %}aria-current="page"{% endif %} href="{% url 'projects_list' %}">Projects</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link {% if 'about_me' in request.path %}active{% endif %}"  {% if 'about_me' in request.path %}aria-current="page"{% endif %} href="{% url 'contact_me'%}">Contact Me</a>
+                            <a class="nav-link {% if 'about_me' in request.path %}active{% endif %}"  {% if 'contact_me' in request.path %}aria-current="page"{% endif %} href="{% url 'contact_me'%}">Contact Me</a>
                         </li>
                     </ul>
                 </div>
@@ -46,7 +46,7 @@
         {% endblock %}
     </main>
 
-    <footer>
+    <footer class="mt-5">
         <nav class="navbar fixed-bottom navbar-expand-sm bg-secondary navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Jonathan Heinzman</a>
@@ -63,7 +63,7 @@
                             <a class="nav-link {% if 'experience' in request.path %}active{% endif %}"  {% if 'experience' in request.path %}aria-current="page"{% endif %} href="{% url 'experience' %}">Experience</a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link {% if 'projects' in request.path %}active{% endif %}"  {% if 'projects' in request.path %}aria-current="page"{% endif %} href="{% url 'projects' %}">Projects</a>
+                            <a class="nav-link {% if 'projects' in request.path %}active{% endif %}"  {% if 'projects' in request.path %}aria-current="page"{% endif %} href="{% url 'projects_list' %}">Projects</a>
                         </li>
                     </ul>
                 </div>
